@@ -49,60 +49,24 @@
 
 ## 🧰 Stack principal
 <p>
-  <img alt="JS" src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=FFD700"/>
   <img alt="TS" src="https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=1E90FF"/>
+  <img alt="JS" src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=FFD700"/>
   <img alt="React" src="https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=1E90FF"/>
   <img alt="Node" src="https://img.shields.io/badge/Node.js-0D1117?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
   <img alt="Supabase" src="https://img.shields.io/badge/Supabase-0D1117?style=for-the-badge&logo=supabase&logoColor=3ECF8E"/>
   <img alt="Cypress" src="https://img.shields.io/badge/Cypress-0D1117?style=for-the-badge&logo=cypress&logoColor=white"/>
   <img alt="Python" src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=white"/>
   <img alt="Java" src="https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=white"/>
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img alt="Oracle" src="https://img.shields.io/badge/Oracle-0D1117?style=for-the-badge&logo=oracle&logoColor=F80000"/>
+
 </p>
-
----
-
-## 🚀 Projetos em destaque
-<!-- Grid 2x3 de cartões simples (só HTML + badges) -->
-<table align="center">
-  <tr>
-    <td width="50%">
-      <h3>Generic Grid & Modals</h3>
-      <p>Arquitetura de Grid genérico (Create/Update/Clone/Derivação, DoubleGrid), filtros flex (time-only), botões Import/Export, design tokens e testes Cypress divididos.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React-18-1E90FF?logo=react&labelColor=0D1117"/>
-        <img src="https://img.shields.io/badge/TanStack%20Table-0D1117?logo=reacttable&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Cypress-0D1117?logo=cypress&logoColor=white"/>
-      </p>
-    </td>
-    <td width="50%">
-      <h3>Finanças Lite</h3>
-      <p>App pessoal com Supabase (contas, categorias, transferências), RLS/Policies, enum types, gráficos Recharts e UI responsiva.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Supabase-0D1117?logo=supabase&logoColor=3ECF8E"/>
-        <img src="https://img.shields.io/badge/React-0D1117?logo=react&logoColor=1E90FF"/>
-        <img src="https://img.shields.io/badge/Recharts-0D1117?logo=recharts&logoColor=white"/>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>Canhão de Newton 3D</h3>
-      <p>Simulação com Three.js: órbita do projétil via gravitação universal; slider de velocidade e colisão com o planeta.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Three.js-0D1117?logo=threedotjs&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Physics-0D1117?logo=apachespark&logoColor=white"/>
-      </p>
-    </td>
-    <td width="50%">
-      <h3>Legado da Força (RPG)</h3>
-      <p>RPG narrativo Star Wars paralelo à era Anakin, foco em drama/romance/combate tático; chapters +3k chars e UI custom.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Storytelling-0D1117?logo=markdown&logoColor=white"/>
-        <img src="https://img.shields.io/badge/UI-0D1117?logo=figma&logoColor=white"/>
-      </p>
-    </td>
-  </tr>
-</table>
+🖥️ Sistemas operacionais que uso
+<p>
+  <img alt="Debian" src="https://img.shields.io/badge/Debian-0D1117?style=for-the-badge&logo=debian&logoColor=white"/>
+  <img alt="Ubuntu" src="https://img.shields.io/badge/Ubuntu-0D1117?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+  <img alt="Windows 10" src="https://img.shields.io/badge/Windows%2010-0D1117?style=for-the-badge&logo=windows&logoColor=white"/>
+</p>
 
 
 ---
