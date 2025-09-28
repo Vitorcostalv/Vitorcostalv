@@ -1,0 +1,100 @@
+name: Update Repo Languages (no-graph)
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # todo dia 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  USERNAME: "Vitorcostalv"
+  LANG_LIMIT: "6"               # quantas linguagens mostrar
+  EXCLUDE: "Jupyter Notebook,SCSS,Sass,Makefile,Shell,Dockerfile,Procfile,Smarty,Roff"
+  INCLUDE_PRIVATE: "false"      # mude para true se quiser contar privados
+
+jobs:
+  repo-langs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute languages and update README
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          const username = process.env.USERNAME;
+          const limit = parseInt(process.env.LANG_LIMIT || '6', 10);
+          const exclude = new Set((process.env.EXCLUDE || '').split(',').map(s=>s.trim()).filter(Boolean));
+          const includePrivate = (process.env.INCLUDE_PRIVATE || 'false').toLowerCase() === 'true';
+
+          const { Octokit } = require("@octokit/rest");
+          const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
+          (async () => {
+            // pega repositórios do usuário (dono)
+            let page = 1, repos = [];
+            while (true) {
+              const { data } = await octokit.repos.listForUser({
+                username, per_page: 100, page, type: "owner", sort: "updated"
+              });
+              if (!data.length) break;
+              repos = repos.concat(data);
+              page++;
+            }
+
+            // filtra
+            repos = repos.filter(r => !r.fork && !r.archived && (includePrivate || !r.private));
+
+            // soma bytes por linguagem
+            const totals = {};
+            for (const r of repos) {
+              try {
+                const { data: langs } = await octokit.repos.listLanguages({ owner: r.owner.login, repo: r.name });
+                for (const [lang, bytes] of Object.entries(langs)) {
+                  if (exclude.has(lang)) continue;
+                  totals[lang] = (totals[lang] || 0) + (bytes || 0);
+                }
+              } catch (e) {
+                // ignora erros de repo sem permissão ou sem linguagens
+              }
+            }
+
+            const sum = Object.values(totals).reduce((a,b)=>a+b,0) || 1;
+            let rows = Object.entries(totals)
+              .sort((a,b)=>b[1]-a[1])
+              .slice(0, limit)
+              .map(([lang, bytes]) => {
+                const pct = (bytes * 100 / sum);
+                // barra em texto (sem gráfico)
+                const blocks = 10;
+                const filled = Math.max(1, Math.round((pct/100) * blocks));
+                const bar = '█'.repeat(filled) + '░'.repeat(blocks - filled);
+                return `- **${lang}** — ${pct.toFixed(2)}%  ${bar}`;
+              });
+
+            if (!rows.length) rows = ['(sem dados de linguagem ainda)'];
+
+            const out = rows.join('\n');
+
+            // atualiza README entre marcadores
+            const readmePath = path.join(process.cwd(), 'README.md');
+            const md = fs.readFileSync(readmePath, 'utf8');
+            const start = '<!--START_REPO_LANGS-->';
+            const end   = '<!--END_REPO_LANGS-->';
+            const pattern = new RegExp(`${start}[\\s\\S]*?${end}`);
+            const next = md.replace(pattern, `${start}\n${out}\n${end}`);
+            fs.writeFileSync(readmePath, next, 'utf8');
+          })().catch(err => { console.error(err); process.exit(1); });
+          NODE
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(readme): update repo languages"
+          file_pattern: README.md
