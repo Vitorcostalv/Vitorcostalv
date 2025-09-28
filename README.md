@@ -22,7 +22,7 @@
   <a href="https://www.instagram.com/vitor.costa00111/" target="_blank">
     <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
   </a>
-  <a href="mailto:Vitor.alves05@cs.cruzeirodosul.edu.br">
+  <a href="mailto:VitorCostalv@proton.me">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-0D1117?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 </p>
