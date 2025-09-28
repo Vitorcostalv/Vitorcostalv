@@ -1,0 +1,30 @@
+name: Update WakaTime Languages
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # todo dia 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # Exibição:
+          SHOW_TITLE: "true"
+          SECTION_NAME: "waka"
+          BLOCKS: "⬛⬛⬛⬜⬜"      # barrinhas em texto (ainda é texto, não gráfico)
+          TIME_RANGE: "last_7_days"
+          LANG_COUNT: "6"        # quantas linguagens mostrar
+          SHOW_TIME: "true"      # mostra tempo (pode por "false" se quiser só %)
+          SHOW_TOTAL: "false"    # não mostrar total
+          SHOW_MASKED_TIME: "false"
+          IGNORED_LANGUAGES: ""  # ex: "JSON,Text" se quiser ocultar
+          COMMIT_BY_ME: "true"
+          AUTHOR_NAME: "Vitorcostalv"
+          AUTHOR_EMAIL: "github-actions[bot]@users.noreply.github.com"
