@@ -242,42 +242,6 @@ Ambientes reproduzíveis, ferramentas de desenvolvimento e processos de entrega.
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-## `~/contact`
-
-<div align="center">
-
-### Tem uma ideia interessante ou um problema difícil para resolver?
-
-Construção de software, produtos digitais e Integração com IA.
-
-<br/>
-
-<a href="mailto:VitorCostalv@proton.me">
-  <img
-    src="https://img.shields.io/badge/START_A_CONVERSATION-58A6FF?style=for-the-badge&logo=protonmail&logoColor=white"
-    alt="Entrar em contato"
-  />
-</a>
-
-<br/><br/>
-
-`Open to conversations about software, products, AI and creative projects.`
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-```text
-Thanks for visiting.
-
-Session finished successfully.
-```
-
-</div>
 
 <img
 width="100%"
