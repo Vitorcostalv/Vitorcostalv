@@ -10,6 +10,8 @@
       <stop stop-color="#73dcca" stop-opacity=".15"/><stop offset=".45" stop-color="#73dcca"/><stop offset="1" stop-color="#d1ad67" stop-opacity=".65"/>
     </linearGradient>
     <linearGradient id="divider"><stop stop-color="#d1ad67"/><stop offset=".7" stop-color="#73dcca" stop-opacity=".35"/><stop offset="1" stop-color="#73dcca" stop-opacity="0"/></linearGradient>
+    <linearGradient id="scan-light"><stop stop-color="#73dcca" stop-opacity="0"/><stop offset=".8" stop-color="#73dcca" stop-opacity=".03"/><stop offset=".97" stop-color="#a5ffe8" stop-opacity=".22"/><stop offset="1" stop-color="#73dcca" stop-opacity="0"/></linearGradient>
+    <linearGradient id="comet-tail"><stop stop-color="#73dcca" stop-opacity="0"/><stop offset="1" stop-color="#a5ffe8"/></linearGradient>
     <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#719487" stroke-opacity=".06"/></pattern>
     <filter id="glow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="4"/></filter>
     <clipPath id="frame"><rect width="1120" height="360" rx="16"/></clipPath>
@@ -22,17 +24,38 @@
     .trace{stroke-dasharray:500;stroke-dashoffset:0;animation:trace 3.8s ease-out 1}
     .spark{animation:spark 4.4s ease-in-out 1}
     .inner{transform-origin:908px 178px;animation:turn 4.2s ease-out 1}
+    .fx-scan{opacity:0;animation:scan-light 4.8s ease-in-out 1}
+    .fx-particles{opacity:.35;animation:particles 4.8s ease-in-out 1}
+    .fx-comet{transform-origin:908px 178px;animation:comet 4.8s ease-in-out 1}
+    .fx-comet.second{animation-direction:reverse}
+    .fx-pulse{transform-origin:908px 178px;opacity:0;animation:ring-pulse 2.4s ease-out 2}
+    .fx-packet{stroke-dasharray:20 520;stroke-dashoffset:540;animation:packet 4.8s ease-in-out 1}
+    .fx-name{opacity:0;animation:name-light 4.8s ease-in-out 1}
     @keyframes flow{from{stroke-dashoffset:242}to{stroke-dashoffset:0}}
     @keyframes arrival{from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
     @keyframes trace{from{stroke-dashoffset:500;opacity:.1}to{stroke-dashoffset:0;opacity:1}}
     @keyframes spark{0%,100%{opacity:.65}45%{opacity:1}65%{opacity:.4}}
     @keyframes turn{from{transform:rotate(-32deg)}to{transform:rotate(0)}}
-    @media(prefers-reduced-motion:reduce){.orbit,.arrival,.trace,.spark,.inner{animation:none}}
+    @keyframes scan-light{0%{transform:translateX(-240px);opacity:0}15%,75%{opacity:1}100%{transform:translateX(1200px);opacity:0}}
+    @keyframes particles{0%,100%{transform:translateY(0);opacity:.35}50%{transform:translateY(-9px);opacity:.8}}
+    @keyframes comet{to{transform:rotate(360deg)}}
+    @keyframes ring-pulse{0%{transform:scale(.72);opacity:0}20%{opacity:.45}100%{transform:scale(1.3);opacity:0}}
+    @keyframes packet{0%{stroke-dashoffset:540}100%{stroke-dashoffset:0}}
+    @keyframes name-light{0%,100%{opacity:0}45%{opacity:.24}}
+    @media(prefers-reduced-motion:reduce){.orbit,.arrival,.trace,.spark,.inner,.fx-scan,.fx-particles,.fx-comet,.fx-pulse,.fx-packet,.fx-name{animation:none}}
   </style>
   <g clip-path="url(#frame)">
     <rect width="1120" height="360" fill="url(#background)"/>
     <rect width="1120" height="360" fill="url(#grid)"/>
     <circle cx="905" cy="179" r="235" fill="url(#halo)"/>
+    <rect class="fx-scan" x="0" y="0" width="210" height="320" fill="url(#scan-light)"/>
+    <g class="fx-particles" fill="#91e3d1">
+      <circle cx="639" cy="62" r="1.5"/><circle cx="708" cy="93" r="1"/><circle cx="755" cy="34" r="2"/>
+      <circle cx="809" cy="69" r="1"/><circle cx="865" cy="43" r="1.4"/><circle cx="971" cy="35" r="1"/>
+      <circle cx="1051" cy="58" r="1.5"/><circle cx="1084" cy="151" r="1"/><circle cx="1069" cy="288" r="1.7"/>
+      <circle cx="991" cy="302" r="1"/><circle cx="861" cy="288" r="1.5"/><circle cx="760" cy="287" r="1"/>
+      <circle cx="666" cy="285" r="1.6"/><circle cx="716" cy="211" r="1"/><circle cx="1068" cy="202" r="1"/>
+    </g>
     <path d="M0 319H1120" stroke="#8caa9f" stroke-opacity=".12"/>
     <path d="M42 40H65M42 40V63M1078 40H1055M1078 40V63M42 282V305H65M1078 282V305H1055" fill="none" stroke="#d1ad67" stroke-opacity=".5"/>
     <g class="arrival">
@@ -41,7 +64,10 @@
       <text x="72" y="231" font-family="Georgia,serif" font-size="32" font-style="italic" fill="#a7b9b7">Interfaces, APIs e IA.</text>
       <text x="73" y="280" font-family="'Courier New',monospace" font-size="17" fill="#a7b9b7" letter-spacing="1">JAVA · TYPESCRIPT · REACT · IA</text>
     </g>
+    <text class="name fx-name" x="68" y="174" font-size="78" fill="#a5ffe8" filter="url(#glow)">Vitor Costa.</text>
     <path class="trace" d="M621 139H674L700 165H747M588 224H655L700 179H769" fill="none" stroke="#73dcca" stroke-opacity=".25" stroke-width="1"/>
+    <path class="fx-packet" d="M621 139H674L700 165H747M588 224H655L700 179H769" fill="none" stroke="#a5ffe8" stroke-width="2" filter="url(#glow)"/>
+    <path class="fx-packet" d="M621 139H674L700 165H747M588 224H655L700 179H769" fill="none" stroke="#a5ffe8" stroke-width="1.5"/>
     <circle cx="621" cy="139" r="3" fill="#73dcca" opacity=".65"/>
     <circle cx="588" cy="224" r="3" fill="#d1ad67" opacity=".65"/>
     <g fill="none">
@@ -51,6 +77,16 @@
       <ellipse class="orbit" cx="908" cy="178" rx="159" ry="66" transform="rotate(-29 908 178)" stroke="url(#metal)" stroke-width="1.4"/>
       <ellipse class="orbit" cx="908" cy="178" rx="137" ry="69" transform="rotate(49 908 178)" stroke="url(#metal)" stroke-width=".9"/>
       <g class="inner"><circle cx="908" cy="178" r="95" stroke="#73dcca" stroke-opacity=".3" stroke-dasharray="48 150 80 320" stroke-width="2"/></g>
+      <circle class="fx-pulse" cx="908" cy="178" r="100" stroke="#73dcca" stroke-width="1.5"/>
+    </g>
+    <g class="fx-comet">
+      <path d="M956 42A144 144 0 0 1 1052 178" fill="none" stroke="url(#comet-tail)" stroke-width="2"/>
+      <circle cx="1052" cy="178" r="10" fill="#73dcca" filter="url(#glow)" opacity=".7"/>
+      <circle cx="1052" cy="178" r="3" fill="#bcffec"/>
+    </g>
+    <g class="fx-comet second">
+      <path d="M841 285A126 126 0 0 1 782 178" fill="none" stroke="#d1ad67" stroke-opacity=".4" stroke-width="1"/>
+      <circle cx="782" cy="178" r="3" fill="#ebcb8c"/>
     </g>
     <rect x="853" y="123" width="110" height="110" rx="27" fill="#111e20" stroke="#73dcca" stroke-opacity=".45" transform="rotate(-8 908 178)"/>
     <rect x="862" y="132" width="92" height="92" rx="21" fill="none" stroke="#d1ad67" stroke-opacity=".2" transform="rotate(-8 908 178)"/>

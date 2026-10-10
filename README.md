@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile-banner.svg" />
-    <img src="assets/profile-banner.gif" width="100%" alt="Vitor Costa — Desenvolvedor Full Stack. Java, TypeScript, React e integrações com IA." />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile-banner.svg?v=2" />
+    <img src="assets/profile-banner.gif?v=2" width="100%" alt="Vitor Costa — Desenvolvedor Full Stack. Java, TypeScript, React e integrações com IA." />
   </picture>
 </p>
 
