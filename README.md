@@ -1,250 +1,57 @@
-<!--
-╔══════════════════════════════════════════════════════════════╗
-║                    VITOR COSTA · PROFILE                     ║
-║              FULLSTACK DEVELOPER · AI BUILDER                ║
-╚══════════════════════════════════════════════════════════════╝
--->
-
-<img
-width="100%"
-src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20&height=220&section=header&text=Vitor%20Costa&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=FULLSTACK%20DEVELOPER%20%2F%2F%20AI%20BUILDER&descAlignY=57&descSize=16"
-alt="Vitor Costa — Fullstack Developer"
-/>
-
-<div align="center">
-
-
-<a href="https://git.io/typing-svg">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&repeat=true&width=720&height=45&lines=%3E+Transformando+ideias+em+produtos;%3E+Interfaces+caprichadas.+Back-end+enxuto.;%3E+Construindo+assistentes+com+IA;%3E+Programando+de+dia.+Jogando+de+noite."
-    alt="Apresentação animada"
-  />
-</a>
-
-<br/>
-
-<a href="https://www.linkedin.com/in/vitor-costa-b177a5312">
-  <img
-    alt="LinkedIn"
-    src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
-  />
-</a>
-<a href="mailto:VitorCostalv@proton.me">
-  <img
-    alt="E-mail"
-    src="https://img.shields.io/badge/Proton_Mail-Contato-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white"
-  />
-</a>
-<a href="https://www.instagram.com/vitor.costa00111/">
-  <img
-    alt="Instagram"
-    src="https://img.shields.io/badge/Instagram-Seguir-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
-  />
-</a>
-
-<br/><br/>
-
-<img
-src="https://img.shields.io/badge/STATUS-BUILDING_LOCAL_AI-22D3EE?style=flat-square&labelColor=0D1117"
-alt="Construindo IA Local"
-/> <img
-src="https://img.shields.io/badge/EXPERIENCE-2%2B_YEARS-58A6FF?style=flat-square&labelColor=0D1117"
-alt="Mais de dois anos de experiência"
-/> <img
-src="https://img.shields.io/badge/LOCATION-BRAZIL-3FB950?style=flat-square&labelColor=0D1117"
-alt="Brasil"
-/> <img
-src="https://img.shields.io/badge/MODE-DEV_%2B_GAMER-F778BA?style=flat-square&labelColor=0D1117"
-alt="Desenvolvedor e gamer"
-/>
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-
-## `~/about-me`
-
-```ts
-interface Developer {
-  name: string;
-  role: string;
-  location: string;
-  principles: string[];
-  currentMission: string;
-  afterHours: {
-    music: string;
-    gaming: string;
-  };
-}
-
-const vitor: Developer = {
-  name: "Vitor Costa",
-  role: "Desenvolvedor Fullstack",
-  location: "Brasil 🇧🇷",
-
-  principles: [
-    "frontend com acabamento de produto",
-    "backend simples, seguro e sustentável",
-    "testes próximos do desenvolvimento",
-    "tecnologia aplicada a problemas reais",
-  ],
-
-  currentMission:
-    "Construir assistentes com LLM, tool calling e dados reais",
-
-  afterHours: {
-    music: "The Neighbourhood on repeat 🎧",
-    gaming: "Platinando e explorando novos jogos",
-  },
-};
-```
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-
-## `~/technology`
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-
-### `core.languages`
-
-<p>
-  <img
-    src="https://skillicons.dev/icons?i=ts,js,java,python,go&theme=dark"
-    alt="TypeScript, JavaScript, Java, Python e Go"
-  />
+<p align="center">
+  <img src="assets/profile-banner.svg" width="100%" alt="Vitor Costa — Desenvolvedor Full Stack. Java, TypeScript, React e integrações com IA." />
 </p>
 
-Desenvolvimento tipado, integrações, automações e aplicações completas.
-
-</td>
-
-<td width="50%" valign="top">
-
-### `interface.layer`
-
-<p>
-  <img
-    src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,vite&theme=dark"
-    alt="React, Next.js, Vue, Tailwind e Vite"
-  />
+<p align="center">
+  <a href="https://port-mu-tawny.vercel.app">Portfólio</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/vitorcostalv/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:VitorCostalv@proton.me">E-mail</a> &nbsp;·&nbsp;
+  <a href="https://port-mu-tawny.vercel.app/assets/Curriculo_Vitor__FullStack.pdf">Currículo</a>
 </p>
 
-Interfaces responsivas, componentização e experiências de produto.
+Desenvolvedor **Full Stack** em São Paulo. Trabalho com **Java, React, TypeScript e APIs REST**, do banco de dados à interface. Também desenvolvo integrações com IA usando **RAG, MCP e tool calling**.
 
-</td>
-  </tr>
+### O que desenvolvo
 
-  <tr>
-    <td width="50%" valign="top">
+- **Back-end:** aplicações Java com POO, SOLID e design patterns; APIs, regras de negócio e integrações.
+- **Front-end:** interfaces responsivas com React e TypeScript, componentização e manutenção de aplicações web.
+- **Qualidade:** testes automatizados, revisão de código e validação dos principais fluxos.
+- **IA aplicada:** assistentes que consultam dados e executam ferramentas para resolver tarefas reais.
 
-### `service.layer`
+### Linguagens e tecnologias
 
-<p>
-  <img
-    src="https://skillicons.dev/icons?i=nodejs,nestjs,spring,laravel,django&theme=dark"
-    alt="Node.js, NestJS, Spring, Laravel e Django"
-  />
+| Área | Tecnologias |
+| :--- | :--- |
+| **Linguagens** | Java · TypeScript · JavaScript · Python · Go · SQL |
+| **Web** | HTML5 · CSS3 · React · Next.js · Vue.js · Tailwind CSS · Vite |
+| **Back-end** | Spring Boot · Node.js · NestJS · Laravel · Django · APIs REST |
+| **Dados** | MySQL · PostgreSQL · Oracle · Supabase · Firebase · modelagem relacional |
+| **Testes** | Cypress · Jasmine · Vitest · Playwright |
+| **Ferramentas e cloud** | Git · GitHub · Linux · Ubuntu · Debian · AWS CloudFormation |
+| **Integrações com IA** | RAG · MCP · LLMs · tool calling |
+
+**Conhecimentos básicos e noções:** EJB, Redis, Docker e CI/CD. Trabalho com Scrum, Kanban e code review.
+
+### Experiência e formação
+
+Na **VTT**, trabalhei no desenvolvimento e na manutenção de aplicações web, APIs e banco de dados MySQL. Desenvolvi a **Luna**, assistente de IA do portal, trabalhei no sistema de analytics e criei testes automatizados com Cypress e Jasmine.
+
+**Ciência da Computação — Universidade Cruzeiro do Sul.** Inglês e espanhol intermediários, com leitura técnica em inglês.
+
+### Projetos
+
+| Projeto | O que faz | Links |
+| :--- | :--- | :--- |
+| **SONDA** | Analisa HTTPS, headers, cookies e HTML de websites; guarda evidências e exporta relatórios. | [Demo](https://sonda-snowy.vercel.app) · [Código](https://github.com/Vitorcostalv/sonda) |
+| **Tarja** | Identifica possíveis dados pessoais e sensíveis em schemas SQL e explica as classificações. | [Demo](https://tarja-lgpd.vercel.app) · [Código](https://github.com/Vitorcostalv/tarja) |
+| **CLT vs PJ** | Compara propostas, descontos e impostos para ajudar na decisão entre CLT e PJ. | [Demo](https://clt-vs-pj-alpha.vercel.app) · [Código](https://github.com/Vitorcostalv/clt-vs-pj) |
+| **Fósforo** | Laboratório de redes neurais aprendendo a jogar Flappy Bird com NEAT. | [Demo](https://fosforo-lab.vercel.app) · [Código](https://github.com/Vitorcostalv/fosforo) |
+| **Red-Black Tree** | Implementação de árvore rubro-negra em Java, com inserção, balanceamento e visualização. | [Código](https://github.com/Vitorcostalv/Red-Black_Tree) |
+
+### Fora do código
+
+The Neighbourhood no repeat, jogos com boas histórias e a próxima platina.
+
+<p align="center">
+  <img src="assets/profile-footer.svg" width="100%" alt="Interfaces, sistemas e ideias em movimento." />
 </p>
-
-APIs, serviços, regras de negócio e integrações entre sistemas.
-
-</td>
-
-<td width="50%" valign="top">
-
-### `data.layer`
-
-<p>
-  <img
-    src="https://skillicons.dev/icons?i=mysql,postgres,supabase,firebase&theme=dark"
-    alt="MySQL, PostgreSQL, Supabase e Firebase"
-  />
-</p>
-
-<img
-alt="Oracle"
-src="https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white"
-/>
-
-<br/><br/>
-
-Modelagem, consultas, procedures, integrações e persistência de dados.
-
-</td>
-  </tr>
-
-  <tr>
-    <td width="50%" valign="top">
-
-### `quality.layer`
-
-<p>
-  <img
-    src="https://skillicons.dev/icons?i=cypress,git,github&theme=dark"
-    alt="Cypress, Git e GitHub"
-  />
-</p>
-
-<img
-alt="Jasmine"
-src="https://img.shields.io/badge/Jasmine-8A4182?style=flat-square&logo=jasmine&logoColor=white"
-/>
-
-<br/><br/>
-
-Testes automatizados, versionamento e validação de comportamento.
-
-</td>
-
-<td width="50%" valign="top">
-
-### `environment.layer`
-
-<p>
-  <img
-    src="https://skillicons.dev/icons?i=docker,linux,ubuntu,vscode&theme=dark"
-    alt="Docker, Linux, Ubuntu e VS Code"
-  />
-</p>
-
-Ambientes reproduzíveis, ferramentas de desenvolvimento e processos de entrega.
-
-</td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-## `~/offline-mode`
-
-<div align="center">
-
-|    🎧 Music mode    |     🎮 Gaming mode    |     🧠 Learning mode    |
-| :-----------------: | :-------------------: | :---------------------: |
-|  The Neighbourhood  |    Caçando platinas   |        AI Agents        |
-|   Música no repeat  |  Explorando histórias |       Tool Calling      |
-
-
-</div>
-
-<br/>
-
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-
-<img
-width="100%"
-src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20&height=120&section=footer"
-alt="Rodapé"
-/>

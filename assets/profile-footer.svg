@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="76" viewBox="0 0 1120 76" role="img" aria-labelledby="title">
+  <title id="title">Interfaces, sistemas e ideias em movimento.</title>
+  <defs><linearGradient id="rule"><stop stop-color="#d1ad67" stop-opacity="0"/><stop offset=".5" stop-color="#73dcca"/><stop offset="1" stop-color="#d1ad67" stop-opacity="0"/></linearGradient></defs>
+  <style>.line{stroke-dasharray:1100;animation:draw 2.5s ease-out 1}@keyframes draw{from{stroke-dashoffset:1100}to{stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){.line{animation:none}}</style>
+  <path class="line" d="M20 15H480L496 7H550L566 23H624L640 15H1100" fill="none" stroke="url(#rule)" stroke-width="1"/>
+  <circle cx="560" cy="15" r="3" fill="#d1ad67"/>
+  <text x="560" y="54" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="2" fill="#8caaa3">INTERFACES, SISTEMAS E IDEIAS EM MOVIMENTO.</text>
+</svg>

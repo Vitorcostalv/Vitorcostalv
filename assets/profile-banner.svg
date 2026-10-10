@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="360" viewBox="0 0 1120 360" role="img" aria-labelledby="title desc">
+  <title id="title">Vitor Costa — Desenvolvedor Full Stack</title>
+  <desc id="desc">Painel escuro com tipografia editorial, um monograma VC e circuitos orbitais em verde e dourado. Java, TypeScript, React e IA.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1120" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101a1c"/><stop offset=".55" stop-color="#0d1419"/><stop offset="1" stop-color="#111c22"/>
+    </linearGradient>
+    <radialGradient id="halo"><stop stop-color="#73dcca" stop-opacity=".14"/><stop offset="1" stop-color="#73dcca" stop-opacity="0"/></radialGradient>
+    <linearGradient id="metal" x1="745" y1="60" x2="1080" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#73dcca" stop-opacity=".15"/><stop offset=".45" stop-color="#73dcca"/><stop offset="1" stop-color="#d1ad67" stop-opacity=".65"/>
+    </linearGradient>
+    <linearGradient id="divider"><stop stop-color="#d1ad67"/><stop offset=".7" stop-color="#73dcca" stop-opacity=".35"/><stop offset="1" stop-color="#73dcca" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#719487" stroke-opacity=".06"/></pattern>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="4"/></filter>
+    <clipPath id="frame"><rect width="1120" height="360" rx="16"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'Courier New',monospace;letter-spacing:2px}
+    .name{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:-2px}
+    .orbit{stroke-dasharray:95 12 2 12;animation:flow 4.4s ease-out 1}
+    .arrival{animation:arrival 1.4s ease-out both}
+    .trace{stroke-dasharray:500;stroke-dashoffset:0;animation:trace 3.8s ease-out 1}
+    .spark{animation:spark 4.4s ease-in-out 1}
+    .inner{transform-origin:908px 178px;animation:turn 4.2s ease-out 1}
+    @keyframes flow{from{stroke-dashoffset:242}to{stroke-dashoffset:0}}
+    @keyframes arrival{from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes trace{from{stroke-dashoffset:500;opacity:.1}to{stroke-dashoffset:0;opacity:1}}
+    @keyframes spark{0%,100%{opacity:.65}45%{opacity:1}65%{opacity:.4}}
+    @keyframes turn{from{transform:rotate(-32deg)}to{transform:rotate(0)}}
+    @media(prefers-reduced-motion:reduce){.orbit,.arrival,.trace,.spark,.inner{animation:none}}
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1120" height="360" fill="url(#background)"/>
+    <rect width="1120" height="360" fill="url(#grid)"/>
+    <circle cx="905" cy="179" r="235" fill="url(#halo)"/>
+    <path d="M0 319H1120" stroke="#8caa9f" stroke-opacity=".12"/>
+    <path d="M42 40H65M42 40V63M1078 40H1055M1078 40V63M42 282V305H65M1078 282V305H1055" fill="none" stroke="#d1ad67" stroke-opacity=".5"/>
+    <g class="arrival">
+      <text x="72" y="78" class="mono" font-size="13" fill="#d1ad67">DESENVOLVEDOR FULL STACK</text>
+      <text x="68" y="174" class="name" font-size="78" fill="#e9e4d8">Vitor Costa<tspan fill="#73dcca">.</tspan></text>
+      <text x="72" y="231" font-family="Georgia,serif" font-size="32" font-style="italic" fill="#a7b9b7">Interfaces, APIs e IA.</text>
+      <text x="73" y="280" font-family="'Courier New',monospace" font-size="17" fill="#a7b9b7" letter-spacing="1">JAVA · TYPESCRIPT · REACT · IA</text>
+    </g>
+    <path class="trace" d="M621 139H674L700 165H747M588 224H655L700 179H769" fill="none" stroke="#73dcca" stroke-opacity=".25" stroke-width="1"/>
+    <circle cx="621" cy="139" r="3" fill="#73dcca" opacity=".65"/>
+    <circle cx="588" cy="224" r="3" fill="#d1ad67" opacity=".65"/>
+    <g fill="none">
+      <circle cx="908" cy="178" r="121" stroke="#54746a" stroke-opacity=".28"/>
+      <circle cx="908" cy="178" r="143" stroke="#567970" stroke-opacity=".35" stroke-dasharray="1 11"/>
+      <path d="M908 17V339M747 178H1069" stroke="#567970" stroke-opacity=".2" stroke-dasharray="2 9"/>
+      <ellipse class="orbit" cx="908" cy="178" rx="159" ry="66" transform="rotate(-29 908 178)" stroke="url(#metal)" stroke-width="1.4"/>
+      <ellipse class="orbit" cx="908" cy="178" rx="137" ry="69" transform="rotate(49 908 178)" stroke="url(#metal)" stroke-width=".9"/>
+      <g class="inner"><circle cx="908" cy="178" r="95" stroke="#73dcca" stroke-opacity=".3" stroke-dasharray="48 150 80 320" stroke-width="2"/></g>
+    </g>
+    <rect x="853" y="123" width="110" height="110" rx="27" fill="#111e20" stroke="#73dcca" stroke-opacity=".45" transform="rotate(-8 908 178)"/>
+    <rect x="862" y="132" width="92" height="92" rx="21" fill="none" stroke="#d1ad67" stroke-opacity=".2" transform="rotate(-8 908 178)"/>
+    <text x="908" y="196" text-anchor="middle" font-family="Georgia,serif" font-size="49" font-weight="700" letter-spacing="-3" fill="#e9e4d8">VC<tspan fill="#73dcca">.</tspan></text>
+    <g class="spark">
+      <circle cx="999" cy="79" r="9" fill="#73dcca" filter="url(#glow)" opacity=".7"/>
+      <circle cx="999" cy="79" r="4" fill="#94f5de"/>
+      <circle cx="801" cy="237" r="4" fill="#d1ad67"/>
+      <circle cx="1035" cy="242" r="3" fill="#73dcca"/>
+    </g>
+    <path d="M72 320H1048" stroke="url(#divider)"/>
+    <text x="72" y="344" class="mono" font-size="10" fill="#8ea7a1">INTERFACES / SISTEMAS / INTEGRAÇÕES</text>
+    <text x="1048" y="344" text-anchor="end" class="mono" font-size="10" fill="#d1ad67">SÃO PAULO · BRASIL</text>
+  </g>
+  <rect x=".5" y=".5" width="1119" height="359" rx="16" fill="none" stroke="#314540" stroke-opacity=".8"/>
+</svg>
